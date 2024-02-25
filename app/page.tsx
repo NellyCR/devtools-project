@@ -3,12 +3,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-import { useAccount } from 'wagmi';
 
 export default function Home() {
-  // Hooks and global state
-  const { isConnecting, isDisconnected } = useAccount();
-
   function signInClicked(){
     console.log("clicked")
     
