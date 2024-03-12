@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import { AuthButton } from "@/components/AuthButton";
 
 export default function Home() {
   function signInClicked(){
@@ -18,7 +19,7 @@ export default function Home() {
           <code className={styles.code}>app/page.tsx</code>
         </p>
         <div>
-         <button onClick={signInClicked}>Sign in</button>
+         <AuthButton></AuthButton>
         </div>
       </div>
 
